@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultithreadTask.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace MultithreadTask
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel(this);
         }
     }
 }
